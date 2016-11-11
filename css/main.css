@@ -1,0 +1,386 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+**************************************************/
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Droid Sans', 'more font stack stuff', sans-serif;
+}
+/*************************** 
+DEFAULTS - MOBILE FIRST 
+***************************/
+h1{
+	margin: 0 0 2rem;
+	height: 300px;
+    font: bold 4.236rem 'Droid Serif', 'more font stack stuff', serif;
+	color: white;
+	background-repeat: no-repeat;
+	background-image: url(../img/actitle.jpg);
+	background-size: 100%;
+	background-position: center right;
+}
+
+h2{
+	padding: 2px 0 2px 0;
+	margin: 2px 0 2px 0;
+	height: 50px;
+    font: bold 2.618rem 'Droid Serif', 'more font stack stuff', serif;
+
+}
+
+
+
+
+li, p, a{
+    font: bold 1.618rem sans-serif,'Droid Sans', 'more font stack stuff';
+}
+pre, code, kbd{
+    font: normal 1.0rem sans-serif,'Droid Sans Mono', 'more font stack stuff', 
+}
+/***************************
+    LAYOUT - MOBILE FIRST
+***************************/
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*header{
+	padding: 1rem 0 5px 0;
+	margin: 10px 0 10px 0;
+	width: 100%;
+}
+
+nav{
+	padding: 1rem 0 5rem 0;
+	margin: 10px 0 10px 0;
+    width: 100%;
+}
+nav>ul{
+    width: 100%;
+}*/
+nav li{
+    width: 100%;
+    list-style: none;
+}
+nav a,
+nav a:link,
+nav a:visited{
+    display: block;
+    font: bold 1.618rem 'Droid Sans', 'more font stack stuff',sans-serif;
+    text-align: center;
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    
+}
+
+
+
+
+@media screen and (max-width:600px){
+	.wrapper{
+		width: 95%;
+	}
+	
+	.mashead{
+		width: 100%
+	}	
+	
+	.mainnav li{
+	padding: 5px 0 5px 0;
+	margin: 10px 0 10px 0;
+	width:100%;
+	height: auto;
+	list-style-type:none;
+	border:1px bold;
+	text-align:center;
+}
+
+.mainnav {
+	float: left;
+    width: 100%;
+    height: 300px;
+    margin: 5px;
+	clear: both;
+}
+	
+main{
+	float: left;
+    width: 100%;
+	clear: right;
+}
+
+	
+.colfirst{
+	padding: 0 0 5px 0;
+	margin: 0 0 1rem 0;
+    float: left;
+    width: 100%;
+}
+
+.colsecond{
+	padding: 0 0 5px 0;
+	margin: 0 0 1rem 0;
+    float: left;
+    width: 100%;
+}
+	
+.colfirst img{
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+	float: left;
+    background-color: azure;
+	clear: left;
+}
+	
+	.footer{
+		float: left;
+		width: 100%;
+	}
+	
+	
+	
+	.footer li {
+		width: 30%;
+		float: left;
+	}
+	
+	
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px){
+	
+	.wrapper{
+		width: 100%;
+	}
+	
+	.mashead{
+		width: 100%
+	}	
+	
+    .mainnav li{
+	font-size: 5px;
+	padding: 0 2px 0 2px;
+	margin: 0 2px 0 2px;
+	width:20%;
+	height: auto;
+	list-style-type:none;
+	border:1px bold;
+	text-align:center;
+	float: left;
+}
+
+.mainnav {
+	
+	border:5px solid black;
+    width: 90%;
+    height: 50px;
+    margin: 5px;
+	clear: both;
+}
+	
+main{
+	float: left;
+    width: 90%;
+	clear: right;
+}
+
+	
+.colfirst{
+	padding: 0 0 5px 0;
+	margin: 0 0 1rem 0;
+    float: left;
+    width: 50%;
+}
+
+.colsecond{
+	padding: 0 0 5px 0;
+	margin: 0 0 1rem 0;
+    float: left;
+    width: 50%;
+}
+	
+	.colfirst img{
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+    width: 60%;
+    height: auto;
+    max-width: 60%;
+	float: left;
+    background-color: azure;
+}
+	.footer{
+		float: left;
+		width: 100%;
+	}
+	
+	
+	
+	.footer li {
+		width: 30%;
+		float: left;
+	}
+	
+	
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px){
+	.mashead{
+		width: 100%
+	}	
+	
+    .mainnav li{
+	width: 20%;
+	padding: 0 5px 0 5px;
+	margin: 0 5px 0 5px;
+	height: auto;
+	list-style-type:none;
+	border:1px bold;
+	text-align:center;
+	float: left;
+}
+
+.mainnav {
+    width: 90%;
+    height: 50px;
+    margin: 5px;
+	clear: both;
+}
+	
+main{
+	float: left;
+    width: 90%;
+	clear: right;
+}
+
+	
+.colfirst{
+	padding: 0 0 5px 0;
+	margin: 0 0 1rem 0;
+    float: left;
+    width: 50%;
+}
+
+.colsecond{
+	padding: 0 0 5px 0;
+	margin: 0 0 1rem 0;
+    float: left;
+    width: 50%;
+}
+	
+	.colfirst img{
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+    width: 50%;
+    height: auto;
+    max-width: 50%;
+	float: left;
+    background-color: azure;
+}
+		.footer{
+		float: left;
+		width: 100%;
+	}
+	
+	
+	
+	.footer li {
+		width: 30%;
+		float: left;
+	}
+	
+}
+
+@media screen and (min-width: 1200px){
+	.mashead{
+		width: 100%
+	}	
+
+.mainnav li{
+	padding: 10px 0 10px 0;
+	margin: 5px 0 5px 0;
+	width:100%;
+	height: auto;
+	list-style-type:none;
+	border:1px bold;
+	text-align:center;
+}
+
+.mainnav {
+	
+	padding: 0;
+	float: left;
+    width: 28%;
+    height: 300px;
+    margin: 5px;
+	border:2px solid black;
+	text-align: center;
+}
+	
+main{
+	margin: 0 1px 1px 5px;
+	padding: 0 1px 1px 5px;
+	float: left;
+    width: 70%;
+	clear: right;
+}
+
+	
+.colfirst{
+	padding: 0 0 5px 0;
+	margin: 0 0 1rem 0;
+    float: left;
+    width: 45%;
+}
+
+.colsecond{
+	padding: 0 5px 5px 5px;
+	margin: 0 1rem 1rem 1rem;
+    float: left;
+    width: 45%;
+}
+.colfirst img{
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+    width: 55%;
+    height: auto;
+    max-width: 55%;
+	float: left;
+    background-color: azure;
+}
+    
+	.footer{
+		width: 100%;
+	}
+	
+	.footer li{
+		width: 30%;
+		float: left;
+	}
+}
